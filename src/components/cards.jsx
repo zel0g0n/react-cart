@@ -2,7 +2,7 @@ function Cards() {
   const cardImages = [
     {src: './master-card.png',alt: 'master-card',id: 1},
     {src: './visa.png',alt: 'visa',id: 2},
-    {src: './ru-pay.png',alt: 'ru-pay',id: 2},
+    {src: './ru-pay.png',alt: 'ru-pay',id: 3},
   ]
   return (
     <div className="paying__cards">

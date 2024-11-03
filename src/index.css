@@ -16,7 +16,6 @@ li {
   align-items: center;
   justify-content: center;
   width: 100%;
-  min-height: 100vh;
 }
 .wrapper {
   display: flex;
@@ -176,7 +175,9 @@ li {
   margin-bottom: 20px;
 }
 .cards__list {
-  display: flex;
+  display: grid;
+  grid-template-columns: 75px 75px 75px 75px;
+  grid-template-rows: 55px;
   justify-content: space-between;
 }
 .cards__list-item {
@@ -273,4 +274,99 @@ li {
 }
 .btn-dir span{
   margin-left: 10px;
+}
+
+
+@media only screen and (max-width: 1132px) and (min-width: 768px) {
+  .wrapper {
+    width: 768px;
+    gap: 60px;
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+  }
+  .paying {
+    width: 500px;
+  }
+  .addiotanal-data {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .addiotanal-data div {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .app {
+    padding: 20px 0;
+  }
+  .wrapper {
+    flex-shrink: 1;
+    width: 350px;
+    height: max-content;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    padding: 0;
+  }
+  .shopping {
+    width: 100%;
+    height: max-content;
+  }
+  .shopping__list {
+    height: max-content;
+  }
+  .shopping__title-prev--page, .shopping__title-title {
+    font-size: 14px;
+  }
+  .shopping__info p {
+    font: 14px;
+  }
+  .shopping__info-title {
+    font-size: 16px;
+  }
+  .shopping__info-data {
+    font-size: 12px;
+    
+  }
+  .shopping__list-item {
+    height: max-content;
+    flex-wrap: wrap;
+    padding: 15px;
+  }
+
+  
+  .paying {
+    width: 100%;
+    height: max-content;
+
+  }
+  .paying__title-title {
+    font-size: 20px;
+  }
+  .cards__list {
+    grid-template-columns: 75px 75px;
+    grid-template-rows: 55px 55px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .cards__list {
+    flex-wrap: wrap;
+  }
+  .paying-btn {
+    width: 100%;
+    height: 50px;
+  }
+
+  /* .addiotanal-data {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .addiotanal-data div {
+    width: 50%;
+  } */
 }
