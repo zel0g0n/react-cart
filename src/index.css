@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 1133px;
+  height: 744px;
+  padding: 30px;
+}
+.shopping {
+  width: 608px;
+  height: 500px;
+
+}
+.shopping__title {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 26px;
+}
+.shopping__title-prev--page {
+  font-size: 12px;
+}
+.shopping__title-prev--page, .shopping__title-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgba(30, 30, 30, 1); 
+  line-height: 27px; 
+}
+.stroke {
+  width: 100%;
+  height: 1px;
+  border: 1.5px solid rgba(208, 207, 207, 1);
+  border-radius: 1px;
+  margin-bottom: 26px;
+}
+
+.shopping__info {
+  width: 100%;
+  margin-bottom: 26px;
+}
+.shopping__info p {
+  color: rgba(30, 30, 30, 1);
+  font-weight: 500;
+}
+.shopping__info-title {
+  font-size: 18px;
+  line-height: 27px;
+}
+.shopping__info-data {
+  font-size: 14px;
+  line-height: 19.1px;
+  
+}
+
+
+.shopping__list {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.shopping__list-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: 120px;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+.product__info {
+  width: 250px;
+}
+.shopping__list-item .product__info p {
+  font-weight: 500;
+  line-height: 27px;
+  color: rgba(30, 30, 30, 1);
+}
+.product__info-name {
+  font-size: 18px;
+}
+.product__info-descr {
+  font-size: 14px;
+}
+
+.product__count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  gap: 6px;
+}
+.product__count .counter-buttons {
+  display: flex;
+  flex-direction: column;
+
+}
+.product__count .counter-buttons button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 20px;
+  height: 15px;
+}
+.product__count .counter-buttons .dec {
+  transform: rotate(180deg);
+}
+.product-price {
+  color: rgba(57, 57, 57, 1);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  width: 60px;
+}
+.delete-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+}
+.paying {
+  width: 388px;
+  height: 644px;
+  border-radius: 20px;
+  background-color: rgba(86, 90, 187, 1);
+  padding: 23px 20px;
+}
+.paying__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+}
+.paying__title-title {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 33px;
+  color: rgba(254, 252, 252, 1);  
+}
+
+.paying__cards {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.paying__cards-title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21.82px;
+  color: rgba(254, 252, 252, 1);  
+  margin-bottom: 20px;
+}
+.cards__list {
+  display: flex;
+  justify-content: space-between;
+}
+.cards__list-item {
+  width: 75px;
+  height: 55px;
+  background: rgba(217, 217, 217, 0.2);
+  border-radius: 5px;
+}
+.cards__list-item--all {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  color: rgba(254, 252, 252, 1); 
+  margin-top: 15px; 
+}
+.cards__list-item:nth-child(4) {
+  cursor: pointer;
+}
+.paying__form {
+  width: 100%;
+  /* margin: 30px 0; */
+}
+.paying__form .playing__form-item {
+  width: 100%;
+  margin-bottom: 12px;
+}
+.paying__form .playing__form-item input{
+  width: 100%;
+  height: 40px;
+  background: rgba(98, 104, 198, 1);
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  padding: 20px;
+  color: rgba(254, 252, 252, 1);
+}
+.paying__form .playing__form-item input::placeholder {
+  color: rgba(196, 196, 196, 1);
+}
+.paying__form .playing__form-item p {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: left;
+  color: rgba(254, 252, 252, 1);
+  margin-bottom: 10px;  
+}
+.addiotanal-data {
+  display: flex;
+  gap: 20px;
+}
+
+.paying__info {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.paying__info div {
+  margin-bottom: 10px;
+}
+.paying__info-stroke {
+  width: 100%;
+  height: 1px;
+  border: 1px solid rgba(95, 101, 195, 1);
+}
+.paying__info-item {
+  display: flex;
+  justify-content: space-between;
+}
+.paying__info-item--title , .paying__info-item--value {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  color: rgba(254, 252, 252, 1);  
+}
+.paying-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 350px;
+  height: 60px;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: rgba(77, 225, 193, 1);
+  border: none;
+}
+.paying-btn p {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: rgba(254, 252, 252, 1);  
+}
+.btn-dir span{
+  margin-left: 10px;
+}
