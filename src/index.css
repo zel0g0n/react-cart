@@ -309,7 +309,7 @@ li {
     flex-direction: column;
     align-items: center;
     gap: 100px;
-    padding: 0;
+    padding: 15px;
   }
   .shopping {
     width: 100%;
